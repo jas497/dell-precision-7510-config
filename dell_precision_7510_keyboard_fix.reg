@@ -1,0 +1,26 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout]
+
+"Scancode Map"=hex:00,00,00,00,00,00,00,00,\
+; ---------------------------------------------------------------------------
+; BE SURE TO UPDATE THE COUNT BELOW TO REFLECT THE TOTAL NUMBER OF REMAPS + 1
+; (and write it as hexadecimal, not decimal) (1 extra for the null terminator)
+; Format for each DWORD: first two values are key to map TO, last two are FROM
+; Source: http://web.archive.org/web/20150619224324/http://www.autohotkey.com/board/topic/8359-problem-remapping-key-in-cygwin-and-putty/#entry52760
+; ---------------------------------------------------------------------------
+07,00,00,00,\
+; Calc -> Home, 121h -> 147h
+47,E0,21,E0,\
+; Media_Prev -> End, 110h -> 14Fh
+4F,E0,10,E0,\
+; Media_Play_Pause -> PgUp, 122h -> 149h
+49,E0,22,E0,\
+; Media_Next -> PgDn, 119h -> 151h
+51,E0,19,E0,\
+; PgUp -> AppsKey, 149h -> 15Dh
+5D,E0,49,E0,\
+; PgDn -> RWin, 151h -> 15Ch
+5C,E0,51,E0,\
+; null terminator
+00,00,00,00
